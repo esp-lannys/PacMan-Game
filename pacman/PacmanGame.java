@@ -5,7 +5,7 @@ import java.awt.geom.Point2D;
 
 
 
-public class PacmanGame {
+public class PacmanGame extends Game {
     
     // map[row][col] 
     // 36 x 31 
@@ -68,7 +68,7 @@ public class PacmanGame {
     public void setState(State state) {
         if (this.state != state) {
             this.state = state;
-          
+            broadcastMessage("stateChanged");
         }
     }
     
