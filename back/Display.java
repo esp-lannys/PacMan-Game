@@ -1,4 +1,4 @@
-package infra;
+package back;
 
 import java.awt.Canvas;
 import java.awt.Color;
