@@ -7,9 +7,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 
 /**
- * Display class.
- * 
- * @author Leonardo Ono (ono.leo@gmail.com)
+ 
  */
 public class Display extends Canvas {
    
