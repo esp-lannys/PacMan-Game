@@ -6,10 +6,7 @@ import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 
-/**
- 
- */
-public class Display extends Canvas {
+public class Display extends Canvas implements Runnable {
    
     private Game game;
     private boolean running;
@@ -35,9 +32,9 @@ public class Display extends Canvas {
         thread.start();
     }
     
-    private class GameLoop implements Runnable {
+  
 
-        @Override
+        
         public void run() {
             long desiredFrameRateTime = 1000 / 60;
             long currentTime = System.currentTimeMillis();
@@ -74,7 +71,7 @@ public class Display extends Canvas {
             }
         }
         
-    }
+    
     
     public void update() {
         game.update();
