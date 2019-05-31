@@ -2,6 +2,7 @@ package pacman;
 
 import java.awt.Dimension;
 import java.awt.geom.Point2D;
+import back.Game;
 
 
 
