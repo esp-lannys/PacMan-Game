@@ -99,6 +99,12 @@ public class PacmanGame extends Game {
     
     // ---
 
+    private void initAllObjs() { // init all objects
+        for (Actor actor : actors) {
+            actor.init();
+        }
+    }
+    
     public void restoreCurrentFoodCount() {
     }
 
