@@ -129,8 +129,12 @@ public class PacmanGame extends Game {
         
         currentFoodCount = foodCount;
     }
-
-  
+    
+    
+     public boolean isLevelCleared()
+    {
+        return currentFoodCount == 0;
+    } 
     
     public void startGame() {
         setState(State.READY);
