@@ -95,6 +95,22 @@ public class PacmanGame extends Game {
     
     
     private void addAllObjs() {
+        
+        for (int row=0; row<31; row++) {
+            for (int col=0; col<36; col++) {
+                if (maze[row][col] == 1) {
+                    maze[row][col] = -1; // wall convert to -1 for ShortestPathFinder
+                }
+                else if (maze[row][col] == 2) {
+                    maze[row][col] = 0;
+                    actors.add(new Food(this, col, row));
+                    foodCount++;
+                }
+                
+            }
+        }
+        
+        
     }
     
     // ---
