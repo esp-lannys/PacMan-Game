@@ -113,7 +113,8 @@ public class PacmanGame extends Game {
                 }
             }
         }
-        
+     
+        actors.add(new GameOver(this));
         
     }
     
