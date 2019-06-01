@@ -96,6 +96,9 @@ public class PacmanGame extends Game {
     
     private void addAllObjs() {
         
+        actors.add(new Initializer(this));
+        actors.add(new Title(this));
+        actors.add(new Background(this));
         foodCount = 0;
         for (int row=0; row<31; row++) {
             for (int col=0; col<36; col++) {
@@ -113,7 +116,7 @@ public class PacmanGame extends Game {
                 }
             }
         }
-     
+        actors.add(new Ready(this));
         actors.add(new GameOver(this));
         
     }
