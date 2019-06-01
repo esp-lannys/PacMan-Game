@@ -122,6 +122,8 @@ public class PacmanGame extends Game {
     }
     
     public void restoreCurrentFoodCount() {
+        
+        currentFoodCount = foodCount;
     }
 
   
