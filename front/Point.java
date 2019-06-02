@@ -59,8 +59,6 @@ public class Point extends PacmanActor {
         }
     }
 
-    // broadcast messages
-
     @Override
     public void stateChanged() {
         visible = false;
