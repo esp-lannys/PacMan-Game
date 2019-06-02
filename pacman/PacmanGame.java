@@ -167,6 +167,8 @@ public class PacmanGame extends Game {
     }
 
     public void returnToTitle() {
+        lives = 3;
+        score = 0;
         setState(State.TITLE);
     }
     
