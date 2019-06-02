@@ -116,8 +116,11 @@ public class PacmanGame extends Game {
                 }
             }
         }
+        actors.add(pacman);
+        actors.add(new Point(this, pacman));
         actors.add(new Ready(this));
         actors.add(new GameOver(this));
+        actors.add(new HUD(this));
         
     }
     
