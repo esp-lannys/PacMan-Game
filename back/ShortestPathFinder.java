@@ -74,7 +74,6 @@ public class ShortestPathFinder {
         }
     }
 
-    // just for debugging purposes
     public void print() {
         for (int y = 0; y < map.length; y++) {
             for (int x = 0; x < map[0].length; x++) {
